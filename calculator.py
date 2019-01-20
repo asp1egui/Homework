@@ -16,7 +16,7 @@ def clickbut(numbers):
      global operator
      operator=operator+str(numbers)
      textinput.set(operator)
-    
+#this evaluate the numbers and operators and give the result to textinput so windowtext can show the result
 def equalbut():
      global operator
      global result
@@ -24,9 +24,11 @@ def equalbut():
      textinput.set(result)
      operator=""
 
+#this empty the variable textinput
 def clrbut():
      textinput.set("")
-     
+#if result is empty set the variable textinput to 0 
+#if not set textinput to the previous result
 def ans():
     if result != '':
         clickbut(result)
